@@ -97,8 +97,8 @@ services:
       guacnetwork:
     restart: always
     volumes:
-      - guacd_drive:/drive:rw
-      - guacd_record:/record:rw
+      - ./drive:/drive:rw
+      - ./record:/record:rw
 
   postgres:
     container_name: postgres_guacamole
